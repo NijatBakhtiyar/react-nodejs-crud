@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body,
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+.app {
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section {
+    width: 100%;
+}
+
+.books {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.book {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+    background: aquamarine;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.delete {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    max-width: fit-content;
+}
+
+.update {
+    background: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    max-width: max-content;
+    text-decoration: none;
+}
+
+.add {
+    background: blue;
+    color: white;
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    max-width: max-content;
+    text-decoration: none;
+    margin-top: 100px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+input {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid gray;
+}
